@@ -10,7 +10,7 @@ const displayMeals = meals =>{
         const {strMeal,strMealThumb,strInstructions} = meal
         const mealDiv = document.createElement('div');
         mealDiv.innerHTML =`
-        <div class="card w-11/12 bg-base-100 shadow-xl bg-yellow-700 text-white">
+        <div class="card w-11/12 bg-base-100 shadow-xl bg-yellow-700 text-white mx-auto">
         <figure><img src="${strMealThumb}" class="h-96 w-full" alt="Shoes" /></figure>
         <div class="card-body">
           <h2 class="card-title">${strMeal}</h2>
@@ -33,4 +33,4 @@ const DisplaySearch = search =>{
     console.log(searchValue)
 }
 
-loadMeal('fish');
+loadMeal('Chicken');
